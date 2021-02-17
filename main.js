@@ -59,7 +59,7 @@ const callInputID = (id) => document.getElementById(id).innerHTML;
 const calculationInvestorInput = (inputValues) => {
     
     
-    const inflationPercent = 5.7;
+    const inflationPercent = 5.71;
     // const estimatedPercent = 11;
     if (inputValues.risk === "Safe") {
         estimatedPercent = 8;
@@ -74,8 +74,8 @@ const calculationInvestorInput = (inputValues) => {
     let npr = ageDifference * 12;
     let r = (estimatedPercent / (100 * 12));
 
-    let fv1 = inputValues.goalCost * Math.pow((1 + inflationPercent / 100), ageDifference);
-    let fv2 = inputValues.possibleInvestment * Math.pow((1 + estimatedPercent / 100), ageDifference);
+    let fv1 = inputValues.goalCost * (Math.pow((1 + inflationPercent / 100), ageDifference));
+    let fv2 = inputValues.possibleInvestment * (Math.pow((1 + estimatedPercent / 100), ageDifference));
     let fv = fv1 - fv2;
     let pmt = (fv*r)/(Math.pow((1+r),npr)-1);
     
