@@ -96,7 +96,7 @@ const showOutput = (outputValues) => {
     console.log(outputValues);
     document.querySelector('.output-top').innerHTML = `
         <p class="text-justify"> 
-        Dear Mr/ Mrs. <strong> ${outputValues.name} </strong>After <strong> ${outputValues.ageDifference}</strong> years You are to have <strong>${outputValues.fv1} Taka </strong>For the House
+        Dear Mr/ Mrs. <strong> ${outputValues.name} </strong>After <strong> ${outputValues.ageDifference}</strong> years You are to have <strong>${outputValues.fv1} Taka </strong>For the House <br>
         The Inflation is considered at <strong>${outputValues.inflationPercent}%</strong> , And The return is Estimated to be <strong>${outputValues.estimatedPercent}%</strong>
         </p>
         `
