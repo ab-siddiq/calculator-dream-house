@@ -27,7 +27,7 @@
                     </div>
                     <!-- middle part -->
                     <div class="col-lg-6 calculator-area-input">
-                        <h2 class="">Hi User, let's take a step closer to your dreams</h2>
+                        <h2 class="">Hi <span id="user">User</span>, let's take a step closer to your dreams</h2>
                         <p class="">We look forward to help create wealth for you</p>
                         <!-- -name -->
                         <div id="name-field" class="name-input">
@@ -37,7 +37,7 @@
                                     placeholder="Your good name">
                             </div>
                             <div class="ms-0">
-                                <button onclick="displayHide('age-field','name-field','name-input','name-display')" id="wealth-name-next" class="btn btn-primary">Next</button>
+                                <button onclick="user('name-input','user');displayHide('age-field','name-field','name-input','name-display')" id="wealth-name-next" class="btn btn-primary">Next</button>
                             </div>
                         </div>
                          <!-- current-age -->
@@ -676,7 +676,7 @@
                                 </li>
                                 <li class="">At What Age You want to Buy the House: <span class="display-output" id="meet-goal-at-age-display"></span></li>
                                 <li class="">The Goal Costs Now: <span class="display-output" id="goal-cost-display"></span></li>
-                                <li class="">What you can invest now in Ekush First Unit Fund?: <span class="display-output" id="possible-investment-display"></span></li>
+                                <li class="">what is the amount of money you will invest now?: <span class="display-output" id="possible-investment-display"></span></li>
                                 <li class="">Your risk Appetite: <span class="display-output" id="risk-display"></span></li>
                             </ol>
                         </div>
@@ -693,16 +693,15 @@
                     <button onclick="displayHide('calculator-area','calculator-output')" class="btn back-button">Back</button>
 
                 </div>
-                <div class="row output-style">
-                    <div class="col output-top">
+                <div class="row ">
+                    <div class="col output-top output-style">
                         
                     </div>
-                </div>
-                <div class="row output-style">
-                    <div class="col-12 output-bottom-left">
+                
+                    <div class="col-12 output-middle output-style">
                         
                     </div>
-                    <div class="col-12 output-bottom-right">
+                    <div class="col-12 output-bottom output-style">
                         
                     </div>
                     <div class="col-12 fv2">
